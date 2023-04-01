@@ -1,0 +1,422 @@
+@charset "UTF-8";
+
+/* ---------------------------------------------------------
+共通部分
+---------------------------------------------------------*/
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  color: #24292e;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* ---------------------------------------------------------
+header
+---------------------------------------------------------*/
+
+header {
+  background-image: url(../images/mainvisual.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 80px;
+}
+
+header h1 {
+  text-align: right;
+  padding: 30px;
+}
+
+.logo {
+  width: 120px;
+  height: 40px;
+}
+
+ /* ---------------------------------------------------------
+main
+---------------------------------------------------------*/
+
+main {
+  text-align: center;
+}
+
+main h2 {
+  font-size: 1.5rem;
+}
+
+main h3 {
+  font-size: 1.25rem;
+}
+
+main p {
+  font-size: 0.875rem;
+}
+
+.gray-bg {
+  max-width: none;
+  background: #f5f5f5;
+  padding: 60px 0;
+}
+
+ /* ---------------------------------------------------------
+section#magazine
+---------------------------------------------------------*/
+#magazine {
+  margin-bottom: 80px;
+}
+
+#magazine h2 {
+  margin-bottom: 20px;
+}
+
+#magazine .flex-item {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#magazine .item {
+  width: 49%;
+  position: relative;
+}
+
+#magazine .text-box {
+  max-width: 290px;
+  padding: 15px 0;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: bold;
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+
+#magazine .item-title {
+  margin-bottom: 2px;
+}
+
+ /* ---------------------------------------------------------
+section#fashion
+---------------------------------------------------------*/
+
+#fashion {
+  background-image: url(../images/fashion.jpg);
+  height: 520px;
+  max-width: none;
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 80px;
+}
+
+#fashion h2 {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+#fashion .button {
+  display: block;
+  margin: 30px auto;
+  width: 133px;
+  height: 44px;
+  border: 1px solid #2a2a2a;
+}
+
+#fashion .button p {
+  padding: 13px;
+  font-size: 0.75rem;
+  color: #24292e;
+}
+
+#fashion a :hover {
+  color: #ddd;
+}
+
+ /* ---------------------------------------------------------
+section.catalog-antique Catalog
+---------------------------------------------------------*/
+
+#catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+#catalog img {
+  width: 49%;
+}
+
+#catalog .text {
+  width: 49%;
+  margin-top: 92px;
+}
+
+#catalog .text h2 {
+  margin-bottom: 40px;
+}
+
+#catalog .text p {
+  margin-bottom: 30px;
+}
+
+ /* ---------------------------------------------------------
+section.catalog-antique Antique
+---------------------------------------------------------*/
+
+#antique {
+  display: flex;
+  justify-content: space-between;
+}
+
+#antique img {
+  width: 49%;
+}
+
+#antique .text {
+  width: 49%;
+  margin-top: 87px;
+}
+
+
+#antique .text h2 {
+  margin-bottom: 40px;
+}
+
+#antique .text p {
+  margin-bottom: 30px;
+}
+
+#antique .button {
+  display: block;
+  margin: 60px auto;
+  width: 133px;
+  height: 44px;
+  border: 1px solid #2a2a2a;
+}
+
+#antique .button p {
+  padding: 13px;
+  font-size: 0.75rem;
+  color: #24292e;
+}
+
+#antique a :hover {
+  color: #ddd;
+}
+
+ /* ---------------------------------------------------------
+footer
+---------------------------------------------------------*/
+
+footer {
+  background: #333333;
+}
+
+footer .flex-item {
+  height: 368px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+footer .item {
+  width: 30%;
+}
+
+footer .item img {
+  margin-top: 160px;
+}
+
+footer .item h3 {
+  font-size: 1rem;
+  margin: 100px 0 10px 0;
+}
+
+footer .item ul {
+  list-style-type: none;
+}
+
+footer .item li {
+  font-size: 0.75rem;
+  line-height: 24px;
+}
+
+footer .item p {
+  font-size: 0.75rem;
+  line-height: 24px;
+}
+
+footer .copy-write {
+  background: #fff;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 25px;
+}
+
+ /* ---------------------------------------------------------
+モバイル
+---------------------------------------------------------*/
+
+@media (max-width: 896px) {
+
+  .gray-bg {
+    padding: 30px 0;
+  }
+
+  /* ---------------------------------------------------------
+  header
+  ---------------------------------------------------------*/
+
+  /* ---------------------------------------------------------
+  main
+  ---------------------------------------------------------*/
+
+  /* ---------------------------------------------------------
+  section#magazine
+  ---------------------------------------------------------*/
+  #magazine {
+    margin-bottom: 50px;
+  }
+
+  #magazine .flex-item {
+    flex-wrap: wrap;
+  }
+
+  #magazine .item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* ---------------------------------------------------------
+  section#fashion
+  ---------------------------------------------------------*/
+
+  #hashion {
+    margin-bottom: 50px;
+  }
+
+  #fashion h2 {
+    padding-top: 35px;
+  }
+
+  /* ---------------------------------------------------------
+  section.catalog-antique Catalog
+  ---------------------------------------------------------*/
+
+  #catalog {
+    flex-wrap: wrap;
+  }
+
+  #catalog img {
+    width: 100%;
+  }
+
+  #catalog .text {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  #catalog .text p {
+    text-align: left;
+  }
+
+  /* ---------------------------------------------------------
+  section.catalog-antique Antique
+  ---------------------------------------------------------*/
+
+  
+  #antique {
+    flex-wrap: wrap;
+  }
+
+  #antique img {
+    width: 100%;
+  }
+
+  #antique .text {
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  #antique .text .tal {
+    text-align: left;
+  }
+
+
+  /* ---------------------------------------------------------
+  footer
+  ---------------------------------------------------------*/
+
+  footer .flex-item {
+    flex-wrap: wrap;
+    height: 456px;
+  }
+
+  footer .item {
+    width: 100%;
+  }
+
+  footer .item img {
+    display: block;
+    margin: 30px auto 0 auto;
+  }
+  
+  footer .item h3 {
+    margin-top: -10px;
+  }
+
+  footer .copy-write {
+    padding: 28px 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
